@@ -59,7 +59,13 @@ public class GUI implements ActionListener{
 
         if (e.getSource() == Load) {
 
-            // WIP
+            LoadFile lf =  new LoadFile();
+
+            try {
+                lf.pickFile();
+            } catch (Exception exception) {
+                exception.printStackTrace();
+            }
 
         }
 
