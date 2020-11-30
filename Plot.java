@@ -32,6 +32,7 @@ public class Plot extends JFrame {
   private XYDataset createDataset() {  
     XYSeriesCollection dataset = new XYSeriesCollection();  
     
+    // using sample data for now
     XYSeries series1 = new XYSeries("Date 1");
     series1.add(10, 2);
     series1.add(20, 4);
