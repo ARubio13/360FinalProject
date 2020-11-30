@@ -31,9 +31,8 @@ public class Plot extends JFrame {
   
   private XYDataset createDataset() {  
     XYSeriesCollection dataset = new XYSeriesCollection();  
-    
     // using sample data for now
-    XYSeries series1 = new XYSeries("Date 1");
+    XYSeries series1 = new XYSeries("Nov 30");
     series1.add(10, 2);
     series1.add(20, 4);
     series1.add(30, 3);
@@ -44,10 +43,10 @@ public class Plot extends JFrame {
     series1.add(80, 8);
     series1.add(90, 14);
     series1.add(100, 12);
-  
+    
     dataset.addSeries(series1);  
       
-    XYSeries series2 = new XYSeries("Date 2");
+    XYSeries series2 = new XYSeries("Dec 1");
     series2.add(10, 1);
     series2.add(20, 3);
     series2.add(30, 1);
@@ -60,6 +59,20 @@ public class Plot extends JFrame {
     series2.add(100, 18);
   
     dataset.addSeries(series2);  
+    
+    XYSeries series3 = new XYSeries("Dec 2");
+    series3.add(10, 2);
+    series3.add(20, 8);
+    series3.add(30, 2);
+    series3.add(40, 4);
+    series3.add(50, 6);
+    series3.add(60, 2);
+    series3.add(70, 1);
+    series3.add(80, 10);
+    series3.add(90, 9);
+    series3.add(100, 16);
+  
+    dataset.addSeries(series3); 
   
     return dataset;  
   }  
