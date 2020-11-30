@@ -1,5 +1,6 @@
 import java.awt.event.*;
 import javax.swing.*;
+import java.io.File;
 
 public class GUI implements ActionListener{
 
@@ -7,6 +8,7 @@ public class GUI implements ActionListener{
     JMenuBar menuBar;
     JMenu File, About;
     JMenuItem Load, Add, Save, Plot;
+    File newFile;
 
     public GUI() {
 
@@ -62,7 +64,7 @@ public class GUI implements ActionListener{
             LoadFile lf =  new LoadFile();
 
             try {
-                lf.pickFile();
+                newFile = lf.pickFile();
             } catch (Exception exception) {
                 exception.printStackTrace();
             }
