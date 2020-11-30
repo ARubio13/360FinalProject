@@ -9,7 +9,6 @@ public class LoadFile {
     JFileChooser fc = new JFileChooser();
     File file;
 
-
     public File pickFile() throws Exception {
         fc.setFileFilter(filter);
         
