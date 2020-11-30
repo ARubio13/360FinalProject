@@ -66,7 +66,7 @@ public class Plot extends JFrame {
   
   public static void main(String[] args) {  
     SwingUtilities.invokeLater(() -> {  
-      Plot example = new Plot("Scatter Chart Example");  
+      Plot example = new Plot("Student Attendance Plot Chart");  
       example.setSize(800, 400);  
       example.setLocationRelativeTo(null);  
       example.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);  
