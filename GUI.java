@@ -79,7 +79,16 @@ public class GUI implements ActionListener{
 
         if (e.getSource() == Save) {
 
-            // WIP
+            FileNameExtensionFilter filter = new FileNameExtensionFilter("CSV File", "csv");
+            JFileChooser fc = new JFileChooser();
+            fc.setFileFilter(filter);
+            File newFile;
+            int input = fc.showSaveDialog(frame);
+            if(input == JFileChooser.APPROVE_OPTION) {
+                newFile = fc.getSelectedFile();
+                System.out.println("Save as file: " + newFile.getAbsolutePath());
+            }
+            //Desired file location is in newFile.getAbsolutePath()
 
         }
 
